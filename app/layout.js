@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
          <body
             className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}
          >
-            <SpeedInsights/>
             <header>
                <Header />
             </header>
@@ -36,6 +35,7 @@ export default function RootLayout({ children }) {
                </main>
             </div>
             <footer>Copyright by The Wild Oasis</footer>
+            <SpeedInsights/>
          </body>
       </html>
    );
