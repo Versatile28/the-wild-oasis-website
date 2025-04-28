@@ -1,5 +1,5 @@
 import '@/app/_styles/globals.css';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Josefin_Sans } from 'next/font/google';
 import Header from './_components/Header';
 import { ReservationProvider } from './_components/ReservationContext';
@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
          <body
             className={`${josefin.className} antialiased bg-primary-950 text-primary-100 min-h-screen flex flex-col relative`}
          >
+            <SpeedInsights/>
             <header>
                <Header />
             </header>
